@@ -12,7 +12,7 @@ $large-screen: 1440px !default;
 
 // Required global settings and mixins for Foundation
 
-@import "foundation/foundation-global";
+// @import "foundation/foundation-global";
 
 //
 // Foundation Variables
@@ -58,6 +58,13 @@ $em-base: 16 !default;
   }
   @return $emValues;
 }
+
+// Change whether or not you include browser prefixes
+// $experimental: true;
+
+// Various global styles
+
+$default-float: left;
 
 // Change whether or not you include browser prefixes
 $experimental: true;
