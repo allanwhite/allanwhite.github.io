@@ -1,36 +1,11 @@
 !!! 5
 html
   head
-    <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width')
-    title R. Allan White | Digital Craftsman
-    link(rel='stylesheet', href='css/normalize.css')
-    link(rel='stylesheet', href='css/foundation.css')
-    script(src='js/vendor/custom.modernizr.js')
+    include head
   body
-    //
-       body content here 
-    script
-      document.write('<script src=' +
-      ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-      '.js><\\/script>')
-    script(src='js/foundation/foundation.js')
-    script(src='js/foundation/foundation.alerts.js')
-    script(src='js/foundation/foundation.clearing.js')
-    script(src='js/foundation/foundation.cookie.js')
-    script(src='js/foundation/foundation.dropdown.js')
-    script(src='js/foundation/foundation.forms.js')
-    script(src='js/foundation/foundation.joyride.js')
-    script(src='js/foundation/foundation.magellan.js')
-    script(src='js/foundation/foundation.orbit.js')
-    script(src='js/foundation/foundation.placeholder.js')
-    script(src='js/foundation/foundation.reveal.js')
-    script(src='js/foundation/foundation.section.js')
-    script(src='js/foundation/foundation.tooltips.js')
-    script(src='js/foundation/foundation.topbar.js')
-    script(src='js/foundation/foundation.interchange.js')
-    script
-      $(document).foundation();
+    //- body content here
+    .container
+      .row
+        .columns.large-12
+          h1 Allan White.
+  include scripts

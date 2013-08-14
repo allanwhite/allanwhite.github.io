@@ -1,0 +1,66 @@
+/*
+Syntax error: File to import not found or unreadable: foundation/foundation-global.
+              Load paths:
+                /Users/allan/Sites/allanwhite.github.io/scss
+                /Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 15 of /Users/allan/Sites/allanwhite.github.io/scss/foundation/_settings.scss
+        from line 5 of /Users/allan/Sites/allanwhite.github.io/scss/foundation.scss
+
+Backtrace:
+/Users/allan/Sites/allanwhite.github.io/scss/foundation/_settings.scss:15
+/Users/allan/Sites/allanwhite.github.io/scss/foundation.scss:5
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/import_node.rb:45:in `import'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/bin/compass:23:in `load'
+/Users/allan/.rvm/gems/ruby-1.9.2-p180/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: foundation/foundation-global.\A               Load paths:\A                 /Users/allan/Sites/allanwhite.github.io/scss\A                 /Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/allan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 15 of /Users/allan/Sites/allanwhite.github.io/scss/foundation/_settings.scss\A         from line 5 of /Users/allan/Sites/allanwhite.github.io/scss/foundation.scss"; }
