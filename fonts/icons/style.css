@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'Icons-Core';
+	src:url('fonts/Icons-Core.eot');
+	src:url('fonts/Icons-Core.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Icons-Core.woff') format('woff'),
+		url('fonts/Icons-Core.ttf') format('truetype'),
+		url('fonts/Icons-Core.svg#Icons-Core') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'Icons-Core';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-play, .icon-tag, .icon-tags, .icon-location, .icon-map, .icon-clock, .icon-calendar, .icon-link, .icon-star, .icon-bookmark, .icon-checkmark, .icon-play-2, .icon-loop, .icon-google-plus, .icon-feed, .icon-twitter, .icon-facebook, .icon-flickr, .icon-linkedin, .icon-tumblr, .icon-pinterest, .icon-document-alt-stroke, .icon-mail, .icon-calendar-alt-fill, .icon-calendar-alt-stroke, .icon-phone, .icon-left-quote, .icon-right-quote, .icon-home, .icon-quotes-left, .icon-home-2, .icon-home-3, .icon-phone-2, .icon-nav, .icon-connection {
+	font-family: 'Icons-Core';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-play:before {
+	content: "\25ba";
+}
+.icon-tag:before {
+	content: "\2617";
+}
+.icon-tags:before {
+	content: "\2616";
+}
+.icon-location:before {
+	content: "\2193";
+}
+.icon-map:before {
+	content: "\25a4";
+}
+.icon-clock:before {
+	content: "\25c9";
+}
+.icon-calendar:before {
+	content: "\25a6";
+}
+.icon-link:before {
+	content: "\271c";
+}
+.icon-star:before {
+	content: "\2605";
+}
+.icon-bookmark:before {
+	content: "\2b12";
+}
+.icon-checkmark:before {
+	content: "\2714";
+}
+.icon-play-2:before {
+	content: "\25b8";
+}
+.icon-loop:before {
+	content: "\e00f";
+}
+.icon-google-plus:before {
+	content: "\e010";
+}
+.icon-feed:before {
+	content: "\e011";
+}
+.icon-twitter:before {
+	content: "\e012";
+}
+.icon-facebook:before {
+	content: "\e013";
+}
+.icon-flickr:before {
+	content: "\e014";
+}
+.icon-linkedin:before {
+	content: "\e015";
+}
+.icon-tumblr:before {
+	content: "\e016";
+}
+.icon-pinterest:before {
+	content: "\e017";
+}
+.icon-document-alt-stroke:before {
+	content: "\e018";
+}
+.icon-mail:before {
+	content: "\e019";
+}
+.icon-calendar-alt-fill:before {
+	content: "\e001";
+}
+.icon-calendar-alt-stroke:before {
+	content: "\e008";
+}
+.icon-phone:before {
+	content: "\e01a";
+}
+.icon-left-quote:before {
+	content: "\e01b";
+}
+.icon-right-quote:before {
+	content: "\e01c";
+}
+.icon-home:before {
+	content: "\e01d";
+}
+.icon-quotes-left:before {
+	content: "\e01e";
+}
+.icon-home-2:before {
+	content: "\e01f";
+}
+.icon-home-3:before {
+	content: "\e020";
+}
+.icon-phone-2:before {
+	content: "\e022";
+}
+.icon-nav:before {
+	content: "\e021";
+}
+.icon-connection:before {
+	content: "\e002";
+}

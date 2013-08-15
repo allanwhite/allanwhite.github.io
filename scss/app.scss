@@ -1,0 +1,13 @@
+//@import "lib/variables";
+@import "foundation/settings";
+//@import "lib/_mixins";
+@import "compass/css3";
+body{
+	background: {
+		//color: $grayDark;
+		image: image-url("/images/profile-desktop.jpg");
+		repeat: no-repeat;
+		size: 100% 100%;
+	}
+	@include background-size(cover);
+}

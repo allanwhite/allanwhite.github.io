@@ -1,0 +1,10 @@
+/* line 5, ../scss/app.scss */
+body {
+  background-image: url('/images/profile-desktop.jpg?1374608409');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

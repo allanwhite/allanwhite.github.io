@@ -2,7 +2,7 @@
 # http_path = "/_themes/festivals"
 css_dir = "css"
 sass_dir = "scss"
-images_dir = "img"
+images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 # fonts_dir = "../../fonts"
