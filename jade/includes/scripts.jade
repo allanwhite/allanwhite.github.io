@@ -1,7 +1,3 @@
-script
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\\/script>')
 script(src='js/foundation/foundation.js')
 script(src='js/foundation/foundation.alerts.js')
 script(src='js/foundation/foundation.clearing.js')
@@ -19,3 +15,9 @@ script(src='js/foundation/foundation.topbar.js')
 script(src='js/foundation/foundation.interchange.js')
 script
   $(document).foundation();
+//- script(type='text/javascript')
+//-   function vp_height() { $("#hero").css('height', '' + window.height());}
+//-   $(document).ready(function() {
+//-   vp_height();
+//-   $(window).bind('resize', vp_height);
+//-   }

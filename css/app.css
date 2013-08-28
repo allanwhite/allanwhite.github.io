@@ -1,10 +1,60 @@
-/* line 5, ../scss/app.scss */
-body {
-  background-image: url('/images/profile-desktop.jpg?1374608409');
+@media only screen {
+  /* line 6, ../scss/app.scss */
+  body {
+    color: black;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 6, ../scss/app.scss */
+  body {
+    color: white;
+  }
+}
+
+/* line 22, ../scss/app.scss */
+a, a:visited {
+  font-weight: bold;
+}
+
+/* line 25, ../scss/app.scss */
+.img-cover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 32, ../scss/app.scss */
+.page-section {
+  padding: 3em;
+}
+
+/* line 35, ../scss/app.scss */
+#hero {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* line 35, ../scss/app.scss */
+  #hero {
+    background-image: url('/images/profile-desktop.jpg?1374608409');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 46, ../scss/app.scss */
+  #hero-small {
+    background-image: url('/images/profile-landscape.jpg?1376590890');
+    height: 30em;
+  }
+}
+
+/* line 55, ../scss/app.scss */
+#info {
+  background-color: #b7391a;
+}
+/* line 59, ../scss/app.scss */
+#info h1, #info h2, #info h3, #info h4, #info p, #info ul, #info ol, #info li, #info dd, #info dt {
+  color: #ff886b;
 }

@@ -2,12 +2,61 @@
 @import "foundation/settings";
 //@import "lib/_mixins";
 @import "compass/css3";
+
 body{
+	// padding: 0;
+	// margin: 0;
+	// background: {
+	// 	//color: $grayDark;
+	// 	image: image-url("/images/profile-desktop.jpg");
+	// }
+	// @include background-size(cover);
+	@media #{$screen}{
+		color: black;
+	}
+	@media #{$small}{
+		color: white;
+	}
+
+}
+a, a:visited{
+	font-weight: bold;
+}
+.img-cover{
 	background: {
-		//color: $grayDark;
-		image: image-url("/images/profile-desktop.jpg");
 		repeat: no-repeat;
 		size: 100% 100%;
 	}
 	@include background-size(cover);
+}
+.page-section{
+	padding: 3em;
+}
+#hero{
+	// position: fixed;
+	width: 100%;
+	// min-height: 100%;
+	@media #{$small}{
+		background: {
+			//color: $grayDark;
+			image: image-url("/images/profile-desktop.jpg");
+		}
+	}
+}
+#hero-small{
+	@media #{$small}{
+		background: {
+			//color: $grayDark;
+			image: image-url("/images/profile-landscape.jpg");
+		}
+		height: 30em;
+	}	
+}
+#info{
+	background: {
+		color: $theme-color-alt;
+	}
+	h1, h2, h3, h4, p, ul, ol, li, dd, dt{
+		color: adjust-color($theme-color-primary, $lightness: 20%, $saturation: 40%);
+	}
 }
