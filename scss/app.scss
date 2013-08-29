@@ -58,6 +58,14 @@ a, a:visited{
 		color: black;
 		padding: $basepad 0 0 0;
 	}
+	@media only screen and (max-width: $small-screen) and (orientation: portrait) {
+		h1{
+			font-size: 3em;
+		}
+		h2{
+			font-size: 2em;
+		}
+	}
 	@media #{$small}{
 		padding: $basepad * 2;
 		h1, h2, h3, h4, p{
