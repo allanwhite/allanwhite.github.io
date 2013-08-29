@@ -71,11 +71,11 @@ a, a:visited {
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   /* line 62, ../scss/app.scss */
   #hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   /* line 65, ../scss/app.scss */
   #hero h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 768px) {
