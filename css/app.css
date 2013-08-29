@@ -13,7 +13,7 @@
 }
 /* line 23, ../scss/app.scss */
 a, a:visited {
-  font-weight: bold;
+  font-family: "quadon-bold", Helvetica, Arial, sans-serif;
 }
 
 /* line 26, ../scss/app.scss */

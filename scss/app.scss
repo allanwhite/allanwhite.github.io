@@ -21,7 +21,7 @@ body{
 	}
 }
 a, a:visited{
-	font-weight: bold;
+	font-family: $fontStackBold;
 }
 .circle{
 	@include border-radius(500px);
