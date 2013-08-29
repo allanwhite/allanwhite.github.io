@@ -11,16 +11,17 @@ body{
 	// 	image: image-url("/images/profile-desktop.jpg");
 	// }
 	// @include background-size(cover);
-	@media #{$screen}{
+	@media #{$screen}{ //default mobile-first
 		color: black;
 	}
-	@media #{$small}{
-		color: white;
-	}
+
 
 }
 a, a:visited{
 	font-weight: bold;
+}
+.circle{
+	@include border-radius(500px);
 }
 .img-cover{
 	background: {
@@ -30,18 +31,37 @@ a, a:visited{
 	@include background-size(cover);
 }
 .page-section{
-	padding: 3em;
+	padding: $basepad * 2;
 }
 #hero{
 	// position: fixed;
 	width: 100%;
 	// min-height: 100%;
+	h1{
+		margin-bottom: 0;
+	}
+	h2{
+		margin-top: 0;
+	}
+	@media #{$screen}{ //default mobile-first
+		color: black;
+		padding: 0;
+	}
 	@media #{$small}{
+		padding: $basepad * 2;
+		h1, h2, h3, h4, p{
+			color: white;
+			text-shadow: 1px 1px 4px $trans-black;
+		}
 		background: {
 			//color: $grayDark;
 			image: image-url("/images/profile-desktop.jpg");
 		}
 	}
+	@media #{$large}{
+
+	}
+
 }
 #hero-small{
 	@media #{$small}{
@@ -56,7 +76,11 @@ a, a:visited{
 	background: {
 		color: $theme-color-alt;
 	}
-	h1, h2, h3, h4, p, ul, ol, li, dd, dt{
-		color: adjust-color($theme-color-primary, $lightness: 20%, $saturation: 40%);
+	h1, h2{
+		text-align: center;
+		color: $theme-color-page;
+	}
+	h3, h4, p, ul, ol, li, dd, dt{
+		color: adjust-color($theme-color-primary, $lightness: 25%, $saturation: 60%);
 	}
 }
