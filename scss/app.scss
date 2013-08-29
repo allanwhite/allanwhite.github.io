@@ -14,8 +14,11 @@ body{
 	@media #{$screen}{ //default mobile-first
 		color: black;
 	}
-
-
+}
+@media only screen and (max-width: $small-screen) and (orientation: landscape) {
+	p, ul, ol, li, dd, dt{
+		font-size: 1em;
+	}
 }
 a, a:visited{
 	font-weight: bold;
@@ -37,29 +40,38 @@ a, a:visited{
 	// position: fixed;
 	width: 100%;
 	// min-height: 100%;
+	h1, h2 {text-align: center;}
 	h1{
 		margin-bottom: 0;
+		font: {
+			family: $fontStackLight;
+			size: emCalc(60);
+		}
 	}
 	h2{
 		margin-top: 0;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-weight: bold;
 	}
 	@media #{$screen}{ //default mobile-first
 		color: black;
-		padding: 0;
+		padding: $basepad 0 0 0;
 	}
 	@media #{$small}{
 		padding: $basepad * 2;
 		h1, h2, h3, h4, p{
 			color: white;
 			text-shadow: 1px 1px 4px $trans-black;
+			text-align: left;
 		}
 		background: {
 			//color: $grayDark;
 			image: image-url("/images/profile-desktop.jpg");
 		}
 	}
-	@media #{$large}{
-
+	@media only screen and (max-width: #{$small-medium-screen}){
+		background-position-x: 20%;
 	}
 
 }

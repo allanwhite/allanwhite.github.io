@@ -5,12 +5,18 @@
   }
 }
 
-/* line 20, ../scss/app.scss */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  /* line 19, ../scss/app.scss */
+  p, ul, ol, li, dd, dt {
+    font-size: 1em;
+  }
+}
+/* line 23, ../scss/app.scss */
 a, a:visited {
   font-weight: bold;
 }
 
-/* line 23, ../scss/app.scss */
+/* line 26, ../scss/app.scss */
 .circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -19,7 +25,7 @@ a, a:visited {
   border-radius: 500px;
 }
 
-/* line 26, ../scss/app.scss */
+/* line 29, ../scss/app.scss */
 .img-cover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -29,61 +35,77 @@ a, a:visited {
   background-size: cover;
 }
 
-/* line 33, ../scss/app.scss */
+/* line 36, ../scss/app.scss */
 .page-section {
   padding: 2.5em;
 }
 
-/* line 36, ../scss/app.scss */
+/* line 39, ../scss/app.scss */
 #hero {
   width: 100%;
 }
-/* line 40, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
+#hero h1, #hero h2 {
+  text-align: center;
+}
+/* line 44, ../scss/app.scss */
 #hero h1 {
   margin-bottom: 0;
+  font-family: "quadon-light", Helvetica, Arial, sans-serif;
+  font-size: 3.75em;
 }
-/* line 43, ../scss/app.scss */
+/* line 51, ../scss/app.scss */
 #hero h2 {
   margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
 }
 @media only screen {
-  /* line 36, ../scss/app.scss */
+  /* line 39, ../scss/app.scss */
   #hero {
     color: black;
-    padding: 0;
+    padding: 1.25em 0 0 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 36, ../scss/app.scss */
+  /* line 39, ../scss/app.scss */
   #hero {
     padding: 2.5em;
     background-image: url('/images/profile-desktop.jpg?1374608409');
   }
-  /* line 52, ../scss/app.scss */
+  /* line 63, ../scss/app.scss */
   #hero h1, #hero h2, #hero h3, #hero h4, #hero p {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 39, ../scss/app.scss */
+  #hero {
+    background-position-x: 20%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 66, ../scss/app.scss */
+  /* line 78, ../scss/app.scss */
   #hero-small {
     background-image: url('/images/profile-landscape.jpg?1376590890');
     height: 30em;
   }
 }
 
-/* line 75, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 #info {
   background-color: #b7391a;
 }
-/* line 79, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 #info h1, #info h2 {
   text-align: center;
   color: white;
 }
-/* line 83, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 #info h3, #info h4, #info p, #info ul, #info ol, #info li, #info dd, #info dt {
   color: #ff9d84;
 }

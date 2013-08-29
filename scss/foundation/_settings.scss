@@ -2,6 +2,7 @@
 // Media Queries
 
 $small-screen: 768px !default;
+$small-medium-screen: 960px !default;
 $medium-screen: 1280px !default;
 $large-screen: 1440px !default;
 
@@ -79,9 +80,9 @@ $experimental: true;
 $fontStackReg:          "quadon", Helvetica, Arial, sans-serif !default;
 $fontStackBold:     	  "quadon", Helvetica, Arial, sans-serif;
 $fontStackBoldItal:    	$fontStackBold;
-$fontStackItal:    		  "quadon", Helvetica, Arial, sans-serif;
+$fontStackItal:    		  "quadon-italic", Helvetica, Arial, sans-serif;
 $fontStackBody:     	  $fontStackReg;
-$fontStackLight:        $fontStackReg;
+$fontStackLight:        "quadon-light", Helvetica, Arial, sans-serif !default;
 $sansFontFamily:        $fontStackReg;
 $serifFontFamily:       Georgia, serif !default;
 $fontStackQuote:        $serifFontFamily;
