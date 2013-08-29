@@ -52,14 +52,14 @@ a, a:visited {
 #hero h1 {
   margin-bottom: 0;
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
-  font-size: 3.75em;
+  font-size: 3em;
 }
 /* line 51, ../scss/app.scss */
 #hero h2 {
   margin-top: 0;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: bold;
 }
 @media only screen {
   /* line 39, ../scss/app.scss */
@@ -68,23 +68,13 @@ a, a:visited {
     padding: 1.25em 0 0 0;
   }
 }
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  /* line 62, ../scss/app.scss */
-  #hero h1 {
-    font-size: 2.5em;
-  }
-  /* line 65, ../scss/app.scss */
-  #hero h2 {
-    font-size: 1.5em;
-  }
-}
 @media only screen and (min-width: 768px) {
   /* line 39, ../scss/app.scss */
   #hero {
     padding: 2.5em;
     background-image: url('/images/profile-desktop.jpg?1374608409');
   }
-  /* line 71, ../scss/app.scss */
+  /* line 74, ../scss/app.scss */
   #hero h1, #hero h2, #hero h3, #hero h4, #hero p {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
@@ -99,23 +89,23 @@ a, a:visited {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 86, ../scss/app.scss */
+  /* line 89, ../scss/app.scss */
   #hero-small {
     background-image: url('/images/profile-landscape.jpg?1376590890');
     height: 30em;
   }
 }
 
-/* line 95, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 #info {
   background-color: #b7391a;
 }
-/* line 99, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 #info h1, #info h2 {
   text-align: center;
   color: white;
 }
-/* line 103, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 #info h3, #info h4, #info p, #info ul, #info ol, #info li, #info dd, #info dt {
   color: #ff9d84;
 }

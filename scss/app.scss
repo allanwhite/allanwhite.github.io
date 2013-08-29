@@ -45,27 +45,30 @@ a, a:visited{
 		margin-bottom: 0;
 		font: {
 			family: $fontStackLight;
-			size: emCalc(60);
+			size: 3em;
 		}
 	}
 	h2{
 		margin-top: 0;
+		font: {
+			size: 1.5em;
+		}
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		font-weight: bold;
+		// font-weight: bold;
 	}
 	@media #{$screen}{ //default mobile-first
 		color: black;
 		padding: $basepad 0 0 0;
 	}
-	@media only screen and (max-width: $small-screen) and (orientation: portrait) {
-		h1{
-			font-size: 2.5em;
-		}
-		h2{
-			font-size: 1.5em;
-		}
-	}
+	// @media only screen and (max-width: $small-screen) and (orientation: portrait) {
+	// 	h1{
+	// 		font-size: 2.5em;
+	// 	}
+	// 	h2{
+	// 		font-size: 1.5em;
+	// 	}
+	// }
 	@media #{$small}{
 		padding: $basepad * 2;
 		h1, h2, h3, h4, p{
