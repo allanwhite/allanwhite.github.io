@@ -4,13 +4,6 @@
 @import "compass/css3";
 
 body{
-	// padding: 0;
-	// margin: 0;
-	// background: {
-	// 	//color: $grayDark;
-	// 	image: image-url("/images/profile-desktop.jpg");
-	// }
-	// @include background-size(cover);
 	@media #{$screen}{ //default mobile-first
 		color: black;
 	}
@@ -36,11 +29,23 @@ a, a:visited{
 .page-section{
 	padding: $basepad * 2;
 }
+.lead{
+	@media #{$screen}{
+		padding-top: $basepad;
+		padding-bottom: $basepad;
+	}
+	@media #{$small}{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 #hero{
 	// position: fixed;
 	width: 100%;
 	// min-height: 100%;
-	h1, h2 {text-align: center;}
+	h1, h2 {
+		text-align: center;
+	}
 	h1{
 		margin-bottom: 0;
 		font: {
@@ -61,15 +66,7 @@ a, a:visited{
 		color: black;
 		padding: $basepad 0 0 0;
 	}
-	// @media only screen and (max-width: $small-screen) and (orientation: portrait) {
-	// 	h1{
-	// 		font-size: 2.5em;
-	// 	}
-	// 	h2{
-	// 		font-size: 1.5em;
-	// 	}
-	// }
-	@media #{$small}{
+	@media #{$small}{ // above mobile
 		padding: $basepad * 2;
 		h1, h2, h3, h4, p{
 			color: white;
