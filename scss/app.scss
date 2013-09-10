@@ -135,15 +135,40 @@ a, a:visited{
 	}
 }
 #featured{
-	@media #{$small}{ // above mobile
-		min-height: 768px;
-		padding: $basepad * 2;
-		h1, h2, h3, h4, p{
-			color: white;
-			text-shadow: 1px 1px 4px $trans-black;
-			text-align: left;
-			margin-bottom: 0.5em;
+	h1, h2, h3, h4, p{
+		color: white;
+		text-shadow: 1px 1px 4px $trans-black;
+	//	text-align: left;
+		margin-bottom: 0.5em;
+	}
+	h1{
+		font:{
+			family: $fontStackLight;
 		}
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+	}
+	h3{
+		color: adjust-color($theme-color-compl, $lightness: -15%, $saturation: 20%); // medium blue
+	}
+	.columns h3{
+		margin-top: $basepad;
+	}
+	@media #{$screen}{ //default mobile-first
+		background: {
+			color: $theme-color-compl-dark;
+			image: image-url("/images/bg-hand-drawn-waves-sm.jpg");
+			background-repeat: no-repeat;
+		}
+		@include background-size(cover);
+		h1, h2, h3, h4{
+			text-align: center;
+		}
+	}
+	@media #{$small}{ // above mobile
+		//min-height: 768px;
+		padding: $basepad * 2;
 		background: {
 			//color: $grayDark;
 			image: image-url("/images/bg-hand-drawn-waves-wide.jpg");
@@ -151,5 +176,9 @@ a, a:visited{
 			attachment: fixed;
 		}
 		@include background-size(cover);
+		h2, h3, h4{
+			text-align: left;
+		}
+
 	}
 }

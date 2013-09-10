@@ -169,10 +169,46 @@ a, a:visited {
   color: white;
 }
 
+/* line 138, ../scss/app.scss */
+#featured h1, #featured h2, #featured h3, #featured h4, #featured p {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0.5em;
+}
+/* line 144, ../scss/app.scss */
+#featured h1 {
+  font-family: "quadon-light", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+/* line 152, ../scss/app.scss */
+#featured h3 {
+  color: #009bb3;
+}
+/* line 155, ../scss/app.scss */
+#featured .columns h3 {
+  margin-top: 1.25em;
+}
+@media only screen {
+  /* line 137, ../scss/app.scss */
+  #featured {
+    background-color: #044049;
+    background-image: url('/images/bg-hand-drawn-waves-sm.jpg?1378788375');
+    background-background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 165, ../scss/app.scss */
+  #featured h1, #featured h2, #featured h3, #featured h4 {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   /* line 137, ../scss/app.scss */
   #featured {
-    min-height: 768px;
     padding: 2.5em;
     background-image: url('/images/bg-hand-drawn-waves-wide.jpg?1378781385');
     background-repeat: no-repeat;
@@ -182,11 +218,8 @@ a, a:visited {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 141, ../scss/app.scss */
-  #featured h1, #featured h2, #featured h3, #featured h4, #featured p {
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  /* line 179, ../scss/app.scss */
+  #featured h2, #featured h3, #featured h4 {
     text-align: left;
-    margin-bottom: 0.5em;
   }
 }
