@@ -4,6 +4,7 @@ html
     include includes/head
   body
     //- body content here
+    a(name='#top')
     .container.img-cover#hero
       .row.show-for-small
         .small-6.small-centered.columns
@@ -48,7 +49,11 @@ html
           p
             | I am currently freelancing, and open to contract or staff opportunities in UX, interaction design, and media producing.
         .large-4.columns
-          h3 thing three
+          h3 Let's Talk.
+          ul
+            li
+              span.icon.icon-phone
+              | 503.799.2217
     .container.page-section#featured
       .row
         .large-12.columns.lead
@@ -74,4 +79,9 @@ html
           h3 Sacramento Festival Brand
           a(href='')
             img(src='/images/featured/sacto.jpg')
+      .row#footer
+        .large-12.columns
+          span
+            a(href='#top', title='Back to top')
+              .logo.icon-easel-logo-2013-k
     include includes/scripts

@@ -18,6 +18,24 @@ a, a:visited{
 	@include transition-property(all);
 	@include transition-duration(0.5s);
 }
+ul{
+	list-style: none;
+	margin-left: 0;
+}
+.logo{
+	a, a:visited{
+		color: white;
+	}
+	font-size: 9em;
+	text-align: center;
+	text-shadow: darken ($theme-color-alt, 20%);
+	//margin-bottom: 50px;
+}
+.icon{
+	padding-right: 0.2em;
+	min-width: 1.5em;
+	text-align: center;
+}
 .circle{
 	@include border-radius(500px);
 }
@@ -54,8 +72,8 @@ a, a:visited{
 		text-align: center;
 		@include opacity (0.001);
 		@include transition-property(all);
-		@include transition-duration(0.5s);
-		@include transition-delay(0.3s);
+		@include transition-duration(0.4s);
+		@include transition-delay(0.2s);
 	}
 	h1{
 		margin-bottom: 0;
@@ -123,7 +141,7 @@ a, a:visited{
 		color: $theme-color-compl;
 	}
 	background: {
-		color: $theme-color-alt;
+		color: $theme-color-primary-alt;
 	}
 	h1, h2{
 		text-align: center;
@@ -150,20 +168,23 @@ a, a:visited{
 		letter-spacing: 0.2em;
 	}
 	h3{
-		color: adjust-color($theme-color-compl, $lightness: -15%, $saturation: 20%); // medium blue
+		color: adjust-color($theme-color-compl, $lightness: -10%, $saturation: 20%); // medium blue
 	}
 	.columns h3{
 		margin-top: $basepad;
 	}
 	@media #{$screen}{ //default mobile-first
 		background: {
-			color: $theme-color-compl-dark;
-			image: image-url("/images/bg-hand-drawn-waves-sm.jpg");
-			background-repeat: no-repeat;
+			color: adjust-color($theme-color-compl-dark, $lightness: -5%, $saturation: -5%);
+			//image: image-url("/images/bg-hand-drawn-waves-sm.jpg");
+			//background-repeat: no-repeat;
 		}
 		@include background-size(cover);
 		h1, h2, h3, h4{
 			text-align: center;
+		}
+		h1{
+			font-size: 1.8em;
 		}
 	}
 	@media #{$small}{ // above mobile
@@ -176,9 +197,15 @@ a, a:visited{
 			attachment: fixed;
 		}
 		@include background-size(cover);
+		h1{
+			font-size: 2.5em;
+		}
 		h2, h3, h4{
 			text-align: left;
 		}
 
 	}
+}
+#footer { // currently attached to a .row and not .container like the other sections
+	padding-top: $basepad * 1.5;
 }
