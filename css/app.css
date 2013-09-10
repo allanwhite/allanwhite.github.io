@@ -194,7 +194,7 @@ a, a:visited {
   /* line 137, ../scss/app.scss */
   #featured {
     background-color: #044049;
-    background-image: url('/images/bg-hand-drawn-waves-sm.jpg?1378788375');
+    background-image: url('/images/bg-hand-drawn-waves-sm.jpg?1378789718');
     background-background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -210,7 +210,7 @@ a, a:visited {
   /* line 137, ../scss/app.scss */
   #featured {
     padding: 2.5em;
-    background-image: url('/images/bg-hand-drawn-waves-wide.jpg?1378781385');
+    background-image: url('/images/bg-hand-drawn-waves-wide.jpg?1378789718');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
