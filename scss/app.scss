@@ -21,6 +21,9 @@ a, a:visited{
 ul{
 	list-style: none;
 	margin-left: 0;
+	li{
+		margin-bottom: 0.2em;
+	}
 }
 .logo{
 	a, a:visited{
@@ -32,7 +35,7 @@ ul{
 	//margin-bottom: 50px;
 }
 .icon{
-	padding-right: 0.2em;
+	padding-right: 0.7em;
 	min-width: 1.5em;
 	text-align: center;
 }

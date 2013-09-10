@@ -29,26 +29,30 @@ ul {
   list-style: none;
   margin-left: 0;
 }
+/* line 24, ../scss/app.scss */
+ul li {
+  margin-bottom: 0.2em;
+}
 
-/* line 25, ../scss/app.scss */
+/* line 28, ../scss/app.scss */
 .logo {
   font-size: 9em;
   text-align: center;
   text-shadow: darken #8a2b14, 20%;
 }
-/* line 26, ../scss/app.scss */
+/* line 29, ../scss/app.scss */
 .logo a, .logo a:visited {
   color: white;
 }
 
-/* line 34, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 .icon {
-  padding-right: 0.2em;
+  padding-right: 0.7em;
   min-width: 1.5em;
   text-align: center;
 }
 
-/* line 39, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
 .circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -57,7 +61,7 @@ ul {
   border-radius: 500px;
 }
 
-/* line 42, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .img-cover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -68,37 +72,37 @@ ul {
 }
 
 @media only screen {
-  /* line 49, ../scss/app.scss */
+  /* line 52, ../scss/app.scss */
   .page-section {
     padding: 1.25em 0.625em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 49, ../scss/app.scss */
+  /* line 52, ../scss/app.scss */
   .page-section {
     padding: 2.5em;
   }
 }
 
-/* line 59, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 #hero {
   width: 100%;
 }
 @media only screen {
-  /* line 60, ../scss/app.scss */
+  /* line 63, ../scss/app.scss */
   #hero .lead {
     padding-top: 1.25em;
     padding-bottom: 1.25em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 60, ../scss/app.scss */
+  /* line 63, ../scss/app.scss */
   #hero .lead {
     padding-top: 150px;
     padding-bottom: 0;
   }
 }
-/* line 71, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 #hero h1, #hero h2, #hero h3 {
   text-align: center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -116,13 +120,13 @@ ul {
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 78, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 #hero h1 {
   margin-bottom: 0;
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
-/* line 85, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 #hero h2 {
   margin-top: 0;
   font-size: 2em;
@@ -130,26 +134,26 @@ ul {
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
-/* line 95, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 #hero h3 {
   font-size: 1.5em;
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
 }
 @media only screen {
-  /* line 59, ../scss/app.scss */
+  /* line 62, ../scss/app.scss */
   #hero {
     color: black;
     padding: 1.25em 0 0 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 59, ../scss/app.scss */
+  /* line 62, ../scss/app.scss */
   #hero {
     min-height: 768px;
     padding: 2.5em;
     background-image: url('/images/profile-desktop.jpg?1374608409');
   }
-  /* line 108, ../scss/app.scss */
+  /* line 111, ../scss/app.scss */
   #hero h1, #hero h2, #hero h3, #hero h4, #hero p {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
@@ -157,65 +161,65 @@ ul {
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 59, ../scss/app.scss */
+  /* line 62, ../scss/app.scss */
   #hero {
     background-position-x: 20%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 123, ../scss/app.scss */
+  /* line 126, ../scss/app.scss */
   #hero-small {
     background-image: url('/images/profile-landscape.jpg?1376590890');
     height: 30em;
   }
 }
 
-/* line 132, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 #info {
   background-color: #b7391a;
 }
-/* line 134, ../scss/app.scss */
+/* line 137, ../scss/app.scss */
 #info .lead p, #info .lead dt, #info .lead ol, #info .lead li {
   font-size: 1.6em;
 }
-/* line 140, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 #info a, #info a:visited {
   color: #00deff;
 }
-/* line 146, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 #info h1, #info h2 {
   text-align: center;
   color: white;
 }
-/* line 150, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 #info h3, #info h4, #info p, #info ul, #info ol, #info li, #info dd, #info dt {
   color: white;
 }
 
-/* line 156, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 #featured h1, #featured h2, #featured h3, #featured h4, #featured p {
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 0.5em;
 }
-/* line 162, ../scss/app.scss */
+/* line 165, ../scss/app.scss */
 #featured h1 {
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-/* line 170, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 #featured h3 {
   color: #00b2cc;
 }
-/* line 173, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 #featured .columns h3 {
   margin-top: 1.25em;
 }
 @media only screen {
-  /* line 155, ../scss/app.scss */
+  /* line 158, ../scss/app.scss */
   #featured {
     background-color: #042a2f;
     -webkit-background-size: cover;
@@ -223,17 +227,17 @@ ul {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 183, ../scss/app.scss */
+  /* line 186, ../scss/app.scss */
   #featured h1, #featured h2, #featured h3, #featured h4 {
     text-align: center;
   }
-  /* line 186, ../scss/app.scss */
+  /* line 189, ../scss/app.scss */
   #featured h1 {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 155, ../scss/app.scss */
+  /* line 158, ../scss/app.scss */
   #featured {
     padding: 2.5em;
     background-image: url('/images/bg-hand-drawn-waves-wide.jpg?1378789718');
@@ -244,17 +248,17 @@ ul {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 200, ../scss/app.scss */
+  /* line 203, ../scss/app.scss */
   #featured h1 {
     font-size: 2.5em;
   }
-  /* line 203, ../scss/app.scss */
+  /* line 206, ../scss/app.scss */
   #featured h2, #featured h3, #featured h4 {
     text-align: left;
   }
 }
 
-/* line 209, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 #footer {
   padding-top: 1.875em;
 }
