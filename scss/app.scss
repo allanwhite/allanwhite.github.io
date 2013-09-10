@@ -15,6 +15,8 @@ body{
 }
 a, a:visited{
 	font-family: $fontStackBold;
+	@include transition-property(all);
+	@include transition-duration(0.5s);
 }
 .circle{
 	@include border-radius(500px);
@@ -27,23 +29,33 @@ a, a:visited{
 	@include background-size(cover);
 }
 .page-section{
-	padding: $basepad * 2;
-}
-.lead{
 	@media #{$screen}{
-		padding-top: $basepad;
-		padding-bottom: $basepad;
+		padding: $basepad $basepad / 2;
 	}
 	@media #{$small}{
-		padding-top: 150px;
-		padding-bottom: 0;
+		padding: $basepad * 2;
 	}
+
 }
+
 #hero{
-	// position: fixed;
+	.lead{
+		@media #{$screen}{
+			padding-top: $basepad;
+			padding-bottom: $basepad;
+		}
+		@media #{$small}{ // adjust padding for desktop
+			padding-top: 150px;
+			padding-bottom: 0;
+		}
+	}	// position: fixed;
 	width: 100%;
-	h1, h2 {
+	h1, h2, h3{
 		text-align: center;
+		@include opacity (0.001);
+		@include transition-property(all);
+		@include transition-duration(0.5s);
+		@include transition-delay(0.3s);
 	}
 	h1{
 		margin-bottom: 0;
@@ -60,6 +72,13 @@ a, a:visited{
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 		// font-weight: bold;
+		margin-bottom: 0;
+	}
+	h3{
+		font:{
+			size: 1.5em;
+			family: $fontStackLight;
+		}
 	}
 	@media #{$screen}{ //default mobile-first
 		color: black;
@@ -93,6 +112,16 @@ a, a:visited{
 	}	
 }
 #info{
+	.lead{
+		p, dt, ol, li{
+			font:{
+				size: 1.6em;
+			}
+		}
+	}
+	a, a:visited{
+		color: $theme-color-compl;
+	}
 	background: {
 		color: $theme-color-alt;
 	}
@@ -101,6 +130,26 @@ a, a:visited{
 		color: $theme-color-page;
 	}
 	h3, h4, p, ul, ol, li, dd, dt{
-		color: adjust-color($theme-color-primary, $lightness: 25%, $saturation: 60%);
+		//color: adjust-color($theme-color-primary, $lightness: 25%, $saturation: 60%);
+		color: white;
+	}
+}
+#featured{
+	@media #{$small}{ // above mobile
+		min-height: 768px;
+		padding: $basepad * 2;
+		h1, h2, h3, h4, p{
+			color: white;
+			text-shadow: 1px 1px 4px $trans-black;
+			text-align: left;
+			margin-bottom: 0.5em;
+		}
+		background: {
+			//color: $grayDark;
+			image: image-url("/images/bg-hand-drawn-waves-wide.jpg");
+			repeat: no-repeat;
+			attachment: fixed;
+		}
+		@include background-size(cover);
 	}
 }

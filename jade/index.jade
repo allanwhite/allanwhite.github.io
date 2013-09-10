@@ -11,14 +11,16 @@ html
         .small-12.small-centered.columns.lead
           h1 R. Allan White
           h2 Digital Producer
+          h3 design | motion | UX
       .row
         .large-6.large-offset-6.columns.hide-for-small.lead
           h1 R. Allan White
           h2 Digital Producer
+          h3 design | motion | UX
         .large-6.large-offset-6.columns
     .container.page-section#info
       .row
-        .large-12.columns
+        .large-12.columns.lead
           p
             | As a digital producer, I've got 20 years of experience solving design problems. I've worked as a designer, web & interactive developer, live event producer, 
             a(href='http://www.behance.net/gallery/Motion-Graphics-Reel-2013/10302671', target='_blank') animator 
@@ -26,9 +28,15 @@ html
             a(href='http://whitebalanceimages.com', target='_blank') photographer 
             | , and 
             a(href='http://www.behance.net/gallery/User-Experience-Document-Examples-Prototypes/10645011', target='_blank') user experience 
-            | (UX) practitioner. I love the art of presenting and creating multimedia experiences to support speakers and visionaries. I enjoy mentoring other digital creatives and educating clients in modern media. 
+            | (UX) practitioner. 
+      .row
+        .large-4.columns
+          p
+            | I love the art of presenting and creating multimedia experiences to support speakers and visionaries. I enjoy mentoring other digital creatives and educating clients in modern media. 
           p
             | When I'm not making things and teaching others, I train in mixed martial arts, study, and coach kids (especially my own 3 children). 
+
+        .large-4.columns
           p
             | Want to know more? Check out my 
             a(href='http://www.behance.net/allanwhite', target='_blank') portfolio
@@ -39,11 +47,31 @@ html
             | . 
           p
             | I am currently freelancing, and open to contract or staff opportunities in UX, interaction design, and media producing.
-      .row
-        .large-4.columns
-          h3 thing one
-        .large-4.columns
-          h3 thing two
         .large-4.columns
           h3 thing three
+    .container.page-section#featured
+      .row
+        .large-12.columns.lead
+          h1 Featured Work
+      .row
+        .large-6.columns
+          h3 Motion Reel
+          .flex-video.vimeo.widescreen
+            iframe(src='//player.vimeo.com/video/72046452?title=0&amp;byline=0&amp;portrait=0', frameborder='0', webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+          p
+            a(href='http://www.behance.net/gallery/Motion-Graphics-Reel-2013/10302671') Read more
+              //- iframe(src='//www.youtube.com/embed/X7d-wb6SJok?rel=0', frameborder='0', allowfullscreen, showinfo='0', autohide='1', controls='1', hl='en_US', modestbranding='1')
+        .large-6.columns
+          h3 CityServe.us
+          a(href='http://www.behance.net/gallery/CityServeus/10350377')
+            img(src='/images/featured/cityserve.png')
+      .row
+        .large-6.columns
+          h3 User Experience Document Samples
+          a(href='')
+            img(src='')
+        .large-6.columns
+          h3 User Experience Document Samples
+          a(href='')
+            img(src='')
     include includes/scripts
