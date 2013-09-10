@@ -35,14 +35,13 @@ a, a:visited{
 		padding-bottom: $basepad;
 	}
 	@media #{$small}{
-		padding-top: 0;
+		padding-top: 150px;
 		padding-bottom: 0;
 	}
 }
 #hero{
 	// position: fixed;
 	width: 100%;
-	// min-height: 100%;
 	h1, h2 {
 		text-align: center;
 	}
@@ -50,13 +49,13 @@ a, a:visited{
 		margin-bottom: 0;
 		font: {
 			family: $fontStackLight;
-			size: 2em;
+			size: 2.5em;
 		}
 	}
 	h2{
 		margin-top: 0;
 		font: {
-			size: 1.5em;
+			size: 2em;
 		}
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
@@ -67,6 +66,7 @@ a, a:visited{
 		padding: $basepad 0 0 0;
 	}
 	@media #{$small}{ // above mobile
+		min-height: 768px;
 		padding: $basepad * 2;
 		h1, h2, h3, h4, p{
 			color: white;
