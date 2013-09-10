@@ -51,7 +51,7 @@ ul{
 }
 .page-section{
 	@media #{$screen}{
-		padding: $basepad $basepad / 2;
+		padding: $basepad 0;
 	}
 	@media #{$small}{
 		padding: $basepad * 2;
@@ -88,7 +88,7 @@ ul{
 	h2{
 		margin-top: 0;
 		font: {
-			size: 2em;
+			//size: 2em;
 		}
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
@@ -136,7 +136,8 @@ ul{
 	.lead{
 		p, dt, ol, li{
 			font:{
-				size: 1.6em;
+				family: $fontStackLight;
+				size: 1.8em;
 			}
 		}
 	}
@@ -148,6 +149,7 @@ ul{
 	}
 	a, a:visited{
 		color: $theme-color-compl;
+		font-family: $fontStackBodyBold;
 	}
 	background: {
 		color: $theme-color-primary-alt;
