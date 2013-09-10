@@ -77,11 +77,13 @@ $experimental: true;
 // @import url(http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic);
 // @import url("http://fonts.googleapis.com/css?family=Roboto:400, 400 italic");
 
-$fontStackReg:          "quadon", Helvetica, Arial, sans-serif !default;
+//$fontStackReg:          "quadon", Helvetica, Arial, sans-serif !default;
+$fontStackReg:          "ProximaNovaRegular", Helvetica, sans-serif !default;
 $fontStackBold:     	  "quadon-bold", Helvetica, Arial, sans-serif;
 $fontStackBoldItal:    	$fontStackBold;
 $fontStackItal:    		  "quadon-italic", Helvetica, Arial, sans-serif;
 $fontStackBody:     	  $fontStackReg;
+$fontStackBodyBold:     "ProximaNovaBold", Helvetica, sans-serif !default;
 $fontStackLight:        "quadon-light", Helvetica, Arial, sans-serif !default;
 $sansFontFamily:        $fontStackReg;
 $serifFontFamily:       Georgia, serif !default;
@@ -96,7 +98,7 @@ $theme-color-primary:       #d35131; // orangy
 $theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
 $theme-color-med: 			    adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
 $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
-$theme-color-alt:           adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // dark 
+$theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
 $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
 $theme-color-compl: 		    #00deff; // bright aqua
 $theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -35%, $saturation: -10%);
@@ -104,6 +106,7 @@ $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker,
 $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
 $trans: 					          rgba(0, 0, 0, 0);
 $trans-black: 		       		rgba(#000, 0.6);
+$black:                     rgba(#000, 1); // it's black!
 // ==================== ++ =======================
 
 // We use these as default colors throughout
@@ -223,7 +226,8 @@ $block-grid-media-queries: true;
 $header-font-family: $fontStackBold;
 $header-font-weight: normal;
 $header-font-style: normal;
-$header-font-color: $theme-color-med; // pale medium-dark shade
+//$header-font-color: $theme-color-med; // pale medium-dark shade
+$header-font-color: $black; // pale medium-dark shade
 
 $header-line-height: 1.3;
 $header-top-margin: .2em;

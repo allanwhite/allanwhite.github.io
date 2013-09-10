@@ -1,9 +1,12 @@
+- var info = [{url: 'tel:503.799.2217', text: '503.799.2217', icon: 'phone'}, {url: 'mailto:awhitespace@gmail.com?subject=Web Contact', text: 'awhitespace@gmail.com', icon: 'envelop'}, {url: 'twitter.com/allanwhite', text: '@allanwhite', icon: 'twitter'}, {url: 'linkedin.com/in/allanwhite', text: 'LinkedIn', icon: 'linkedin'}]
+
 !!! 5
 html
   head
     include includes/head
   body
     //- body content here
+    a(name='#top')
     .container.img-cover#hero
       .row.show-for-small
         .small-6.small-centered.columns
@@ -18,6 +21,8 @@ html
           h2 Digital Producer
           h3 design | motion | UX
         .large-6.large-offset-6.columns
+      .grabber
+        span(aria-hidden='true').icon-icon-disc-grabber
     .container.page-section#info
       .row
         .large-12.columns.lead
@@ -25,10 +30,10 @@ html
             | As a digital producer, I've got 20 years of experience solving design problems. I've worked as a designer, web & interactive developer, live event producer, 
             a(href='http://www.behance.net/gallery/Motion-Graphics-Reel-2013/10302671', target='_blank') animator 
             | and video editor, 
-            a(href='http://whitebalanceimages.com', target='_blank') photographer 
+            a(href='http://whitebalanceimages.com') photographer 
             | , and 
             a(href='http://www.behance.net/gallery/User-Experience-Document-Examples-Prototypes/10645011', target='_blank') user experience 
-            | (UX) practitioner. 
+            | (UX) designer. 
       .row
         .large-4.columns
           p
@@ -38,17 +43,36 @@ html
 
         .large-4.columns
           p
-            | Want to know more? Check out my 
-            a(href='http://www.behance.net/allanwhite', target='_blank') portfolio
+            strong Want to know more? 
+            | Check out my 
+            a(href='http://www.behance.net/allanwhite') portfolio
             | , read some 
-            a(href='http://slid.es/allanwhite', target='_blank') case studies
+            a(href='http://slid.es/allanwhite') case studies
             | , and connect on my 
-            a(href='http://linkedin.com/in/allanwhite', target='_blank') LinkedIn profile
+            a(href='http://linkedin.com/in/allanwhite') LinkedIn profile
             | . 
           p
             | I am currently freelancing, and open to contract or staff opportunities in UX, interaction design, and media producing.
         .large-4.columns
-          h3 thing three
+          h3 Let's Talk.
+          ul
+            //- mixin info(url, text, icon)
+              - var info = [{url: 'tel:503.799.2217', text: '503.799.2217', icon: 'phone'}, {url: 'mailto:awhitespace@gmail.com?subject=Web Contact', text: 'awhitespace@gmail.com', icon: 'envelop'}, {url: 'twitter.com/allanwhite', text: '@allanwhite', icon: 'twitter'}, {url: 'linkedin.com/in/allanwhite', text: 'LinkedIn', icon: 'linkedin'}]
+            li
+              span.icon.icon-phone
+              | 503.799.2217
+            li
+              span.icon.icon-envelop
+              a(href='mailto:awhitespace@gmail.com?subject=Web Contact') email me
+            li
+              span.icon.icon-linkedin
+              a(href='http://linkedin.com/in/allanwhite') LinkedIn
+            li
+              span.icon.icon-screen
+              a(href='http://behance.net/allanwhite') Behance Portfolio
+            li
+              span.icon.icon-twitter
+              a(href='http://twitter.com/allanwhite') @allanwhite
     .container.page-section#featured
       .row
         .large-12.columns.lead
@@ -67,11 +91,16 @@ html
             img(src='/images/featured/cityserve.png')
       .row
         .large-6.columns
-          h3 User Experience Document Samples
+          h3 User Experience Design
           a(href='http://www.behance.net/gallery/User-Experience-Document-Examples-Prototypes/10645011')
-            img(src='/images/featured/ux.png')
+            img(src='/images/featured/ux.jpg')
         .large-6.columns
           h3 Sacramento Festival Brand
           a(href='')
             img(src='/images/featured/sacto.jpg')
+      .row#footer
+        .large-12.columns
+          span
+            a(href='#top', title='Back to top')
+              .logo.icon-easel-logo
     include includes/scripts
