@@ -140,6 +140,12 @@ ul{
 			}
 		}
 	}
+	p, dt, ol, li{
+		font:{
+			family: $fontStackReg;
+			weight: normal;
+		}
+	}
 	a, a:visited{
 		color: $theme-color-compl;
 	}

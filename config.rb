@@ -6,8 +6,8 @@ images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 # fonts_dir = "../../fonts"
-output_style = :compressed
-# output_style = :expanded
+# output_style = :compressed
+output_style = :expanded
 # line_numbers = :true
 # sass_options = { :debug_info => true }
 
