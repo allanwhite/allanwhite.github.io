@@ -99,6 +99,7 @@ $theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%,
 $theme-color-alt:           adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // dark 
 $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
 $theme-color-compl: 		    #00deff; // bright aqua
+$theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -35%, $saturation: -10%);
 $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
 $theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
 $trans: 					          rgba(0, 0, 0, 0);
