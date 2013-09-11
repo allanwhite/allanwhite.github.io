@@ -84,46 +84,43 @@ ul li {
   }
 }
 
-@media only screen {
-  /* line 63, ../scss/app.scss */
-  .grabber {
-    position: absolute;
-    margin: -5px;
-    padding: 0;
-    color: #b7391a;
-    font-size: 4em;
-    bottom: 0;
-    left: 44%;
-  }
+/*
+.grabber {
+	@media only screen{
+		position: absolute;
+		margin: -5px;
+		padding: 0;
+		color: $theme-color-primary-alt;
+		font-size: 4em;
+		bottom: 0;
+		left: 44%;
+	}
+	@media only screen and (min-width: 768px){
+		font-size: 9em;
+		top: $hero-height - 130;
+		left: 44%;
+	}
 }
-@media only screen and (min-width: 768px) {
-  /* line 63, ../scss/app.scss */
-  .grabber {
-    font-size: 9em;
-    top: 670px;
-    left: 44%;
-  }
-}
-
-/* line 80, ../scss/app.scss */
+*/
+/* line 81, ../scss/app.scss */
 #hero {
   width: 100%;
 }
 @media only screen {
-  /* line 81, ../scss/app.scss */
+  /* line 82, ../scss/app.scss */
   #hero .lead {
     padding-top: 1.25em;
     padding-bottom: 1.25em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 81, ../scss/app.scss */
+  /* line 82, ../scss/app.scss */
   #hero .lead {
     padding-top: 150px;
     padding-bottom: 0;
   }
 }
-/* line 92, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 #hero h1, #hero h2, #hero h3 {
   text-align: center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -141,39 +138,39 @@ ul li {
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 99, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 #hero h1 {
   margin-bottom: 0;
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
   font-size: 2.5em;
 }
-/* line 106, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 #hero h2 {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
-/* line 116, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 #hero h3 {
   font-size: 1.5em;
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
 }
 @media only screen {
-  /* line 80, ../scss/app.scss */
+  /* line 81, ../scss/app.scss */
   #hero {
     color: black;
     padding: 1.25em 0 0 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 80, ../scss/app.scss */
+  /* line 81, ../scss/app.scss */
   #hero {
     min-height: 800px;
     padding: 2.5em;
     background-image: url('/images/profile-desktop.jpg?1374608409');
   }
-  /* line 129, ../scss/app.scss */
+  /* line 130, ../scss/app.scss */
   #hero h1, #hero h2, #hero h3, #hero h4, #hero p {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
@@ -181,76 +178,76 @@ ul li {
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 80, ../scss/app.scss */
+  /* line 81, ../scss/app.scss */
   #hero {
     background-position-x: 20%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 144, ../scss/app.scss */
+  /* line 145, ../scss/app.scss */
   #hero-small {
     background-image: url('/images/profile-landscape.jpg?1376590890');
     height: 30em;
   }
 }
 
-/* line 153, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 #info {
   background-color: #b7391a;
 }
-/* line 155, ../scss/app.scss */
+/* line 156, ../scss/app.scss */
 #info .lead p, #info .lead dt, #info .lead ol, #info .lead li {
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
 }
-/* line 161, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 #info .lead a, #info .lead a:visited {
   font-family: "quadon-bold", Helvetica, Arial, sans-serif;
 }
-/* line 165, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 #info p, #info dt, #info ol, #info li {
   font-family: "ProximaNovaRegular", Helvetica, sans-serif;
   font-weight: normal;
 }
-/* line 171, ../scss/app.scss */
+/* line 172, ../scss/app.scss */
 #info a, #info a:visited {
   color: #00deff;
   font-family: "ProximaNovaBold", Helvetica, sans-serif;
 }
-/* line 178, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 #info h1, #info h2 {
   text-align: center;
   color: white;
 }
-/* line 182, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 #info h3, #info h4, #info p, #info ul, #info ol, #info li, #info dd, #info dt {
   color: white;
 }
 
-/* line 188, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 #featured h1, #featured h2, #featured h3, #featured h4, #featured p {
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 0.5em;
 }
-/* line 194, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 #featured h1 {
   font-family: "quadon-light", Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-/* line 202, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 #featured h3 {
   color: #00b2cc;
 }
-/* line 205, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 #featured .columns h3 {
   margin-top: 1.25em;
 }
 @media only screen {
-  /* line 187, ../scss/app.scss */
+  /* line 188, ../scss/app.scss */
   #featured {
     background-color: #042a2f;
     -webkit-background-size: cover;
@@ -258,17 +255,17 @@ ul li {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 215, ../scss/app.scss */
+  /* line 216, ../scss/app.scss */
   #featured h1, #featured h2, #featured h3, #featured h4 {
     text-align: center;
   }
-  /* line 218, ../scss/app.scss */
+  /* line 219, ../scss/app.scss */
   #featured h1 {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 187, ../scss/app.scss */
+  /* line 188, ../scss/app.scss */
   #featured {
     padding: 2.5em;
     background-image: url('/images/bg-hand-drawn-waves-wide.jpg?1378789718');
@@ -279,17 +276,17 @@ ul li {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 232, ../scss/app.scss */
+  /* line 233, ../scss/app.scss */
   #featured h1 {
     font-size: 2.5em;
   }
-  /* line 235, ../scss/app.scss */
+  /* line 236, ../scss/app.scss */
   #featured h2, #featured h3, #featured h4 {
     text-align: left;
   }
 }
 
-/* line 241, ../scss/app.scss */
+/* line 242, ../scss/app.scss */
 #footer {
   padding-top: 1.875em;
 }
