@@ -1,4 +1,4 @@
-- var info = [{url: 'tel:503.799.2217', text: '503.799.2217', icon: 'phone'}, {url: 'mailto:awhitespace@gmail.com?subject=Web Contact', text: 'awhitespace@gmail.com', icon: 'envelop'}, {url: 'twitter.com/allanwhite', text: '@allanwhite', icon: 'twitter'}, {url: 'linkedin.com/in/allanwhite', text: 'LinkedIn', icon: 'linkedin'}]
+- var info = [{url: 'tel:503.799.2217', text: '503.799.2217', icon: 'phone'}, {url: 'mailto:awhitespace@gmail.com?subject=Web Contact', text: 'awhitespace@gmail.com', icon: 'envelop'}, {url: 'twitter.com/allanwhite', text: '@allanwhite', icon: 'twitter'}, {url: 'images/Resume%20-%20R.%20Allan%20White.pdf', text: 'Resume', icon: 'document-alt-fill'}, {url: 'linkedin.com/in/allanwhite', text: 'LinkedIn', icon: 'linkedin'}]
 
 !!! 5
 html
@@ -52,27 +52,14 @@ html
             a(href='http://linkedin.com/in/allanwhite') LinkedIn profile
             | . 
           p
-            | I am currently freelancing, and open to contract or staff opportunities in UX, interaction design, and media producing.
+            | I am currently freelancing, and open to contract or staff opportunities in UX, front-end development, interaction design, motion graphics, and video editing.
         .large-4.columns
           h3 Let's Talk.
           ul
-            //- mixin info(url, text, icon)
-              - var info = [{url: 'tel:503.799.2217', text: '503.799.2217', icon: 'phone'}, {url: 'mailto:awhitespace@gmail.com?subject=Web Contact', text: 'awhitespace@gmail.com', icon: 'envelop'}, {url: 'twitter.com/allanwhite', text: '@allanwhite', icon: 'twitter'}, {url: 'linkedin.com/in/allanwhite', text: 'LinkedIn', icon: 'linkedin'}]
-            li
-              span.icon.icon-phone
-              | 503.799.2217
-            li
-              span.icon.icon-envelop
-              a(href='mailto:awhitespace@gmail.com?subject=Web Contact') email me
-            li
-              span.icon.icon-linkedin
-              a(href='http://linkedin.com/in/allanwhite') LinkedIn
-            li
-              span.icon.icon-screen
-              a(href='http://behance.net/allanwhite') Behance Portfolio
-            li
-              span.icon.icon-twitter
-              a(href='http://twitter.com/allanwhite') @allanwhite
+            each item, i in info // list contact info from top 
+              li
+                span(class='icon-'+info[i].icon).icon
+                a(href=info[i].url) #{info[i].text}
     .container.page-section#featured
       .row
         .large-12.columns.lead
