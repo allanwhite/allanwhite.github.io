@@ -28,7 +28,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-screen, .icon-mobile, .icon-mobile-2, .icon-tv, .icon-map, .icon-map-2, .icon-phone, .icon-profile, .icon-tags, .icon-tag, .icon-quotes-left, .icon-search, .icon-zoom-in, .icon-zoom-out, .icon-plus, .icon-minus, .icon-play, .icon-play-2, .icon-feed, .icon-twitter, .icon-vimeo, .icon-google-plus, .icon-facebook, .icon-github, .icon-linkedin, .icon-tumblr-sign, .icon-location-arrow, .icon-linkedin-2, .icon-google-plus-2, .icon-facebook-2, .icon-tumblr, .icon-tumblr-2, .icon-chevron-sign-left, .icon-chevron-sign-right, .icon-chevron-sign-up, .icon-chevron-sign-down, .icon-envelop, .icon-reorder, .icon-book, .icon-mail, .icon-document-alt-stroke, .icon-document-alt-fill, .icon-eye, .icon-info, .icon-left-quote, .icon-right-quote, .icon-easel-logo, .icon-icon-disc-grabber {
+.icon-screen, .icon-mobile, .icon-mobile-2, .icon-tv, .icon-map, .icon-map-2, .icon-phone, .icon-profile, .icon-tags, .icon-tag, .icon-quotes-left, .icon-plus, .icon-minus, .icon-play, .icon-play-2, .icon-feed, .icon-twitter, .icon-vimeo, .icon-google-plus, .icon-facebook, .icon-github, .icon-linkedin, .icon-tumblr-sign, .icon-location-arrow, .icon-linkedin-2, .icon-google-plus-2, .icon-facebook-2, .icon-tumblr, .icon-tumblr-2, .icon-chevron-sign-left, .icon-chevron-sign-right, .icon-chevron-sign-up, .icon-chevron-sign-down, .icon-envelop, .icon-reorder, .icon-book, .icon-mail, .icon-document-alt-stroke, .icon-document-alt-fill, .icon-eye, .icon-info, .icon-left-quote, .icon-right-quote, .icon-easel-logo, .icon-icon-disc-grabber, .icon-cloud-download, .icon-paste, .icon-sitemap, .icon-suitcase, .icon-file-alt, .icon-file, .icon-file-text, .icon-play-circle, .icon-asterisk, .icon-envelope-alt, .icon-bolt, .icon-play-sign, .icon-file-pdf {
 	font-family: 'allanwhite-io';
 	speak: none;
 	font-style: normal;
@@ -70,15 +70,6 @@ you can use the generic selector below, but it's slower:
 }
 .icon-quotes-left:before {
 	content: "\e00a";
-}
-.icon-search:before {
-	content: "\e00b";
-}
-.icon-zoom-in:before {
-	content: "\e00c";
-}
-.icon-zoom-out:before {
-	content: "\e00d";
 }
 .icon-plus:before {
 	content: "\e00e";
@@ -181,4 +172,43 @@ you can use the generic selector below, but it's slower:
 }
 .icon-icon-disc-grabber:before {
 	content: "\e020";
+}
+.icon-cloud-download:before {
+	content: "\f0ed";
+}
+.icon-paste:before {
+	content: "\f0ea";
+}
+.icon-sitemap:before {
+	content: "\f0e8";
+}
+.icon-suitcase:before {
+	content: "\f0f2";
+}
+.icon-file-alt:before {
+	content: "\f0f6";
+}
+.icon-file:before {
+	content: "\f15b";
+}
+.icon-file-text:before {
+	content: "\f15c";
+}
+.icon-play-circle:before {
+	content: "\f01d";
+}
+.icon-asterisk:before {
+	content: "\f069";
+}
+.icon-envelope-alt:before {
+	content: "\f0e0";
+}
+.icon-bolt:before {
+	content: "\f0e7";
+}
+.icon-play-sign:before {
+	content: "\f144";
+}
+.icon-file-pdf:before {
+	content: "\e00b";
 }
