@@ -18,10 +18,10 @@ each val, key in profile
 
 title= site.title
 link(rel='shortcut icon', href=site.favicon)
-link(rel='stylesheet', href='/css/normalize.css')
-link(rel='stylesheet', href='/css/foundation.css')
-link(rel='stylesheet', href='/css/fonts.css')
-link(rel='stylesheet', href='/css/app.css')
-link(rel='stylesheet', href='/css/print.css')
+
+- var css = ['normalize', 'foundation', 'fonts', 'app', 'print']
+each file in css
+  link(rel='stylesheet', href='/css/'+'#{file}'+'.css')
+
 script(src='/js/vendor/custom.modernizr.js')
 script(src='/js/vendor/zepto.js')
