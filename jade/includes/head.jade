@@ -1,10 +1,23 @@
+- var site = {title: 'R. Allan White | Digital Producer', url: 'http://allanwhite.info', image: '/images/thumbnail-site-square.jpg', favicon: '/favicon.ico', description: 'I\'m a seasoned digital craftsman, with over 20 years of experience as a designer, web developer, UX practitioner, video producer, and animator. I\'m an intensely curious "expert generalist" who loves teaching and learning new skills.'}
+- var profile = {first_name: 'Allan', last_name: 'White', username: 'allanwhite'}
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 meta(charset='utf-8')
 meta(name='viewport', content='width=device-width')
-title R. Allan White | Digital Producer
-link(rel='shortcut icon', href='/favicon.ico')
+meta(description=site.description)
+each val, key in site // G+ metadata
+  meta(property='og:'+'#{key}', content='#{val}')
+each val, key in profile
+  meta(property='og:profile:'+'#{key}', content='#{val}')
+
+//- <meta property="og:title" content="View My Online Chess Game On ChessManiac.com"/>
+//- <meta property="og:image" content="http://www.chessmaniac.com/share/9936185.gif"/>
+//- <meta property="og:url" content="http://www.chessmaniac.com/webchess/mule.php"/>
+//- <meta property="og:description" content="My game (og:description) v4"/>
+
+title= site.title
+link(rel='shortcut icon', href=site.favicon)
 link(rel='stylesheet', href='/css/normalize.css')
 link(rel='stylesheet', href='/css/foundation.css')
 link(rel='stylesheet', href='/css/fonts.css')
