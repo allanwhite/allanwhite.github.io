@@ -202,6 +202,7 @@ ul{
 	}
 	h3{
 		color: adjust-color($theme-color-compl, $lightness: -10%, $saturation: 20%); // medium blue
+		/*margin-bottom: 0.5em;*/
 	}
 	.columns h3{
 		margin-top: $basepad;
@@ -237,6 +238,9 @@ ul{
 			text-align: left;
 		}
 
+	}
+	.flex-video {
+		margin-bottom: 0.3em;
 	}
 }
 #footer { // currently attached to a .row and not .container like the other sections
