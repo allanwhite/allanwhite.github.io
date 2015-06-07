@@ -1,248 +1,40 @@
-//@import "lib/variables";
-@import "foundation/settings";
-//@import "lib/_mixins";
-@import "compass/css3";
+@import "settings";
+@import "foundation";
 
-$hero-height: 800px;
-
-body{
-	@media #{$screen}{ //default mobile-first
-		color: black;
-	}
-}
-@media only screen and (max-width: $small-screen) and (orientation: landscape) {
-	p, ul, ol, li, dd, dt{
-		font-size: 1em;
-	}
-}
-a, a:visited{
-	font-family: $fontStackBold;
-	@include transition-property(all);
-	@include transition-duration(0.5s);
-}
-ul{
-	list-style: none;
-	margin-left: 0;
-	li{
-		margin-bottom: 0.2em;
-	}
-}
-.logo{
-	a, a:visited{
-		color: white;
-	}
-	font-size: 9em;
-	text-align: center;
-	text-shadow: darken ($theme-color-alt, 20%);
-	//margin-bottom: 50px;
-}
-.icon{
-	padding-right: 0.7em;
-	min-width: 1.5em;
-	text-align: center;
-}
-.circle{
-	@include border-radius(500px);
-}
-.img-cover{
-	background: {
-		repeat: no-repeat;
-		size: 100% 100%;
-	}
-	@include background-size(cover);
-}
-.page-section{
-	@media #{$screen}{
-		padding: $basepad 0;
-	}
-	@media #{$small}{
-		padding: $basepad * 2;
-	}
-
-}
-/*
-.grabber {
-	@media #{$screen}{
-		position: absolute;
-		margin: -5px;
-		padding: 0;
-		color: $theme-color-primary-alt;
-		font-size: 4em;
-		bottom: 0;
-		left: 44%;
-	}
-	@media #{$small}{
-		font-size: 9em;
-		top: $hero-height - 130;
-		left: 44%;
-	}
-}
-*/
-#hero{
-	.lead{
-		@media #{$screen}{
-			padding-top: $basepad;
-			padding-bottom: $basepad;
-		}
-		@media #{$small}{ // adjust padding for desktop
-			padding-top: 150px;
-			padding-bottom: 0;
-		}
-	}	// position: fixed;
-	width: 100%;
-	h1, h2, h3{
-		text-align: center;
-		@include opacity (0.001);
-		@include transition-property(all);
-		@include transition-duration(0.4s);
-		@include transition-delay(0.2s);
-	}
-	h1{
-		margin-bottom: 0;
-		font: {
-			family: $fontStackLight;
-			size: 2.5em;
-		}
-	}
-	h2{
-		margin-top: 0;
-		font: {
-			//size: 2em;
-		}
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		// font-weight: bold;
-		margin-bottom: 0;
-	}
-	h3{
-		font:{
-			size: 1.5em;
-			family: $fontStackLight;
-		}
-	}
-	@media #{$screen}{ //default mobile-first
-		color: black;
-		padding: $basepad 0 0 0;
-	}
-	@media #{$small}{ // above mobile
-		min-height: $hero-height;
-		padding: $basepad * 2;
-		h1, h2, h3, h4, p{
-			color: white;
-			text-shadow: 1px 1px 4px $trans-black;
-			text-align: left;
-		}
-		background: {
-			//color: $grayDark;
-			image: image-url("/images/profile-desktop.jpg");
-		}
-	}
-	@media only screen and (max-width: #{$small-medium-screen}){
-		background-position-x: 20%;
-	}
-
-}
-#hero-small{
-	@media #{$small}{
-		background: {
-			//color: $grayDark;
-			image: image-url("/images/profile-landscape.jpg");
-		}
-		height: 30em;
-	}	
-}
-#info{
-	.lead{
-		p, dt, ol, li{
-			font:{
-				family: $fontStackLight;
-				size: 1.8em;
-			}
-		}
-		a, a:visited{
-			font-family: $fontStackBold;
-		}
-	}
-	p, dt, ol, li{
-		font:{
-			family: $fontStackReg;
-			weight: normal;
-		}
-	}
-	a, a:visited{
-		color: $theme-color-compl;
-		font-family: $fontStackBodyBold;
-	}
-	background: {
-		color: $theme-color-primary-alt;
-	}
-	h1, h2{
-		text-align: center;
-		color: $theme-color-page;
-	}
-	h3, h4, p, ul, ol, li, dd, dt{
-		//color: adjust-color($theme-color-primary, $lightness: 25%, $saturation: 60%);
-		color: white;
-	}
-}
-#featured{
-	h1, h2, h3, h4, p{
-		color: white;
-		text-shadow: 1px 1px 4px $trans-black;
-	//	text-align: left;
-		margin-bottom: 0.5em;
-	}
-	h1{
-		font:{
-			family: $fontStackLight;
-		}
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-	}
-	h3{
-		color: adjust-color($theme-color-compl, $lightness: -10%, $saturation: 20%); // medium blue
-		/*margin-bottom: 0.5em;*/
-	}
-	.columns h3{
-		margin-top: $basepad;
-	}
-	@media #{$screen}{ //default mobile-first
-		background: {
-			color: adjust-color($theme-color-compl-dark, $lightness: -5%, $saturation: -5%);
-			//image: image-url("/images/bg-hand-drawn-waves-sm.jpg");
-			//background-repeat: no-repeat;
-		}
-		@include background-size(cover);
-		h1, h2, h3, h4{
-			text-align: center;
-		}
-		h1{
-			font-size: 1.8em;
-		}
-	}
-	@media #{$small}{ // above mobile
-		//min-height: 768px;
-		padding: $basepad * 2;
-		background: {
-			//color: $grayDark;
-			image: image-url("/images/bg-hand-drawn-waves-wide.jpg");
-			repeat: no-repeat;
-			attachment: fixed;
-		}
-		@include background-size(cover);
-		h1{
-			font-size: 2.5em;
-		}
-		h2, h3, h4{
-			text-align: left;
-		}
-
-	}
-	.flex-video {
-		margin-bottom: 0.3em;
-	}
-}
-#footer { // currently attached to a .row and not .container like the other sections
-	padding-top: $basepad * 1.5;
-}
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
