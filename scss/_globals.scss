@@ -48,7 +48,7 @@ img.left{
 .caption{
   font:{
   	style: italic;
-    family: $serifFontFamily;
+    family: $font-family-serif;
   }
   text-align: center;
   color: $body-font-color;
@@ -56,13 +56,13 @@ img.left{
 .panel{
   &.callout{
     background:{
-      image: url('#{$img_path}bg_banner-480.png');
+      image: url('/images/bg_banner-480.png');
       position: center center;
       repeat: none;
     }
   }
   .button{
-    @include box-shadow(black 0 0 10px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }

@@ -13,7 +13,7 @@
 // d. Media Query Ranges
 // e. Typography
 // 01. Accordion
-02. Alert Boxes
+// 02. Alert Boxes
 // 03. Block Grid
 // 04. Breadcrumbs
 // 05. Buttons
@@ -114,14 +114,37 @@ $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", Courier, mon
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$theme-color-primary:       #d35131; // orangy
+$theme-color-primary-light: adjust-color($theme-color-primary, $lightness: 20%, $saturation: -20%); // pale 
+$theme-color-med:           adjust-color($theme-color-primary, $lightness: 10%, $saturation: 0%);
+$theme-color-primary-alt:   adjust-color($theme-color-primary, $lightness: -10%, $saturation: 10%); // deep 
+$theme-color-alt:           adjust-color($theme-color-primary, $lightness: -20%, $saturation: 10%); // dark 
+$theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+$theme-color-compl:         #00deff; // bright aqua
+$theme-color-compl-dark:    adjust-color($theme-color-compl, $lightness: -35%, $saturation: -10%);
+$theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+$theme-color-links:         adjust-color($theme-color-primary, $lightness: 5%, $saturation: 20%); // 
+$trans:                     rgba(0, 0, 0, 0);
+$trans-black:               rgba(#000, 0.6);
+$black:                     rgba(#000, 1); // it's black!
+// ==================== ++ =======================
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+
+$primary-color:             $theme-color-primary;
+$secondary-color:           $theme-color-page-tint; // light, like gray
+$alert-color:               adjust-color($theme-color-compl, $lightness: 10%, $saturation: 40%);
+$success-color:             $theme-color-primary;
+$warning-color:             #f08a24;
+$info-color:                #a0d3e8;
+
+// We use these to control various global styles
+
+$body-bg: $theme-color-page;
+$body-font-color: $theme-color-page;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 // We use these to control various global styles
 // $body-bg: $white;
