@@ -5,10 +5,10 @@
   padding-bottom: 143px !important;
 }
 .img-circle{
-  @include border-radius(500px);
+  border-radius: 500px;
 }
 .radius{
-  @include border-radius(0.8em);
+  border-radius: 0.8em;
 }
 .label{
   // @include transition-property(all);
